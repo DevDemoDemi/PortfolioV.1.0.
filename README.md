@@ -80,5 +80,5 @@ This page was created to ensure easy accessibility with a keyboard, and elements
         15. Contact Information section of Main page
 
 ### Questions/Comments/Contribution
-For any questions, comments, or contribution to this project please contact sole developer Demi Parrilla at dparrilla243@gmail.com
+For any questions, comments, or contribution to this project please contact sole developer Demi Parrilla at demiparrilla802@gmail.com
 
