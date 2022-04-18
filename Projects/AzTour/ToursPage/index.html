@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/style.css">
+    <title>Az Tours Page</title>
+</head>
+<body id="style">
+    <header id="headcont" class="content">Tours</header>
+    <nav id="navcont" class="content">
+        <a class="navlink" href="../MainAttractions/index.html" target="_blank">Main Attractions</a>
+        <a class="navlink" href="../GalleryPage/index.html" target="_blank">Gallery</a>
+        <div id="homelink">
+            <a class="navlink" href="../index.html" target="_blank">
+                <img id="imglink" src="Images/arizona-flag-large.png">
+                <div id="hometext">Home</div>
+            </a>
+        </div>
+        <a class="navlink" href="../ComingSoon/index.html" target="_blank">Sports</a>
+        <a class="navlink" href="../ComingSoon/index.html" target="_blank">Higher Education</a>
+    </nav>
+    <form id="tourform">
+        <div id="topform">
+            <div id="fullname">
+                <label for="name" id="name-label">First and Last Name</label><br>
+                <input id="name" type="text" name="name" placeholder="Full Name"><br>
+            </div>
+            <div id="emailinfo">
+                <label for="email" id="email-label">E-mail (required):</label><br>
+                <input id="email" type="email" name="email" placeholder="E-mail" required>
+            </div>
+            <div id="pickdate">
+                <label for="date">Date requesting for:</label><br>
+                <input id="date" type="date" name="date">
+            </div>
+        </div>
+        <div id="infoform">
+            <div id="siteform">
+                Attraction:<br>
+                <label for="grandcanyon">
+                    <input id="grandcanyon" value="grandcanyon" type="checkbox" name="site">Grand Canyon
+                </label><br>
+                <label for="petrifiedforest">
+                    <input id="petrifiedforest" value="petrifiedforest" type="checkbox" name="site">Petrified Forest
+                </label><br>
+                <label for="tombstone">
+                    <input id="tombstone" value="tombstone" type="checkbox" name="site">Tombstone
+                </label><br>
+                <label for="bisbee">
+                    <input id="bisbee" value="bisbee" type="checkbox" name="site">Bisbee
+                </label><br>
+                <label for="kartchner">
+                    <input id="kartchner" value="kartchner" type="checkbox" name="site">Kartchner Caverns
+                </label><br>
+                <label for="colossal">
+                    <input id="colossal" value="colossal" type="checkbox" name="site">Colassal Caves
+                </label><br>
+                <label for="chiricahua">
+                    <input id="chiricahua" value="chiricahua" type="checkbox" name="site">Chiricahua National Monument
+                </label><br>
+                <label for="havasu">
+                    <input id="havasu" value="havasu" type="checkbox" name="site">Lake Havasu
+                </label><br>
+                <label for="other">
+                    <input id="other" value="other" type="checkbox" name="site">Other
+                    <input id="othertext" type="text" placeholder="Please specify">
+                </label>
+            </div>
+            <div id="radioform">
+                Seeking:<br>
+                <label for="tours">
+                    <input id="tours" value="tours" type="radio" name="infotype">Tours
+                </label><br>
+                <label for="info">
+                    <input id="info" value="info" type="radio" name="infotype">Information
+                </label><br>
+                <label for="both">
+                    <input id="both" value="both" type="radio" name="infotype">Both
+                </label><br>
+            </div>
+        </div>
+        <div id="bottomform">
+            <textarea id="comments" placeholder="Questions/Comments"></textarea>
+            <button id="submit" type="submit">Submit</button>
+        </div>
+    </form>
+    
+</body>
+</html>

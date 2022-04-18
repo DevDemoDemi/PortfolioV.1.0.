@@ -1,0 +1,433 @@
+#style {
+    background: purple;
+    color: palegoldenrod;
+    display: block;
+    margin: 0px;
+}
+
+#navbar {
+    position: fixed;
+    top: 0px;
+    background: linear-gradient(
+        90deg, 
+        purple 0px, 
+        palegoldenrod 25%, 
+        palegoldenrod 50%,
+        palegoldenrod 75%,
+        purple 100%);
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    font-family: fantasy;
+}
+
+.navlink {
+    color: purple;
+    padding-right: 5%;
+    padding-left: 5%;
+    font-size: 1.5em;
+    align-self: center;
+    position: relative;
+}
+
+.navlink:hover {
+    color: gray;
+    transform: rotateY(180deg) scale(1.5);
+}
+
+#welcome-section {
+    display: block;
+    position: absolute;
+    top: 19.5vh;
+    left: 25vw;
+    height: 100vh;
+}
+
+#img {
+    height: auto;
+    width: 20vw;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-style: double;
+    border-width: 25px;
+}
+
+#welcomehead {
+    position: relative;
+    top: 100px;
+    left: 20px;
+    float: right;
+    font-size: 5em;
+    font-family: fantasy;
+}
+
+#content {
+    position: relative;
+    bottom: -100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "aboutme projects";
+    column-gap: 1vw;
+    margin: 5%;
+    text-align: center;
+}
+
+.content {
+    background: palegoldenrod;
+    color: purple;
+    padding-left: 2%;
+    padding-right: 2%;
+    height: 75vh;
+}
+
+#about_me {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    background: purple;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.about_back {
+    background: palegoldenrod;
+    height: 100vh;
+}
+
+#about_top {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.conthead {
+    font-size: 2em;
+    font-family: fantasy;
+}
+
+#about_name {
+    font-style: italic;
+    margin-top: -20px;
+}
+
+#about_flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100vw;
+    background: purple;
+    column-gap: 3px;
+    border-bottom: 3px;
+    border-bottom-style: solid;
+    border-top: 3px;
+    border-top-style: solid;
+}
+
+.sub_head {
+    font-family: fantasy;
+    font-size: 1.25em;
+}
+
+#soft_skills {
+    width: 50vw;    
+    background: palegoldenrod;
+}
+
+#soft_list {
+    background: palegoldenrod;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+}
+
+#hard_skills {
+    width: 50vw;
+    background: palegoldenrod;
+    overflow: auto;
+    height: 32vh;
+}
+
+#hard_list {
+    text-align: left;
+}
+
+.parainfo {
+    text-align: justify;
+}
+
+#contact_box {
+    padding-top: 10%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 15%;
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -25px;
+    text-align: left;
+    padding-bottom: 5%;
+    padding-top: 2%;
+}
+
+#contact_type {
+    font-style: italic;
+}
+
+#contact_info {
+    margin-left: 1em;
+}
+
+#about_bottom {
+    max-width: 25vw;
+    display: flex;
+    flex-direction: column;
+    border-top: 3px solid;
+    margin-left: 19.7%;
+    padding-top: 2%;
+}
+
+#add_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: purple;
+    column-gap: 3px;
+}
+
+.links {
+    padding: 2%;
+    background: palegoldenrod;
+}
+
+.empty {
+    background: palegoldenrod;
+    width: 91.57px;
+    height: auto;
+}
+
+#tiles {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+#tiles2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.other_link {
+    color: purple;
+    font-family: fantasy;
+}
+
+.other_link:hover {
+    color: gray;
+}
+
+.project_info {
+    margin-top: 0px;
+}
+
+.img {
+    width: 15vw;
+    height: auto;
+}
+
+.img:hover {
+    transform: scale(1.2);
+}
+
+#bottompage {
+    position: absolute;
+    left: 31%;
+    bottom: -100vh;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+/* MOBILE NAVBAR AND FORM HIDDEN IN DESKTOP BELOW */
+@media (min-width: 1300px) {
+    #navbar_mobile {
+        display: none;
+    }
+
+    .break {
+        display: none;
+    }
+}
+/* MOBILE NAVBAR AND FORM HIDDEN IN DESKTOP ABOVE */
+
+/* IPAD PRO FORMAT BELOW */
+@media (max-width: 1200px) {
+    #style {
+        width: 75vw;
+        height: auto;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    #navbar_mobile {
+        position: fixed;
+        top: 0px;
+        background: linear-gradient(
+            90deg, 
+            purple 0px, 
+            palegoldenrod 25%, 
+            palegoldenrod 50%,
+            palegoldenrod 75%,
+            purple 100%);
+        height: 50px;
+        width: 100vw;
+        display: flex;
+        justify-content: space-evenly;
+        font-family: fantasy;
+        text-align: center;
+    }
+
+    .navlink_mobile {
+        font-size: 2em;
+    }
+
+    #img {
+        width: 45vw;
+        height: auto;
+    }
+
+    #welcome-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 0px;
+    }
+
+    #welcomehead {
+        text-align: center;
+        font-size: 7em;
+        position: relative;
+        top: -50px;
+        left: 0px;
+    }
+
+    #content {
+        display: none;
+    }
+
+    #bottompage {
+        position: absolute;
+        bottom: 50px;
+        left: 135px;
+        max-width: 100vw;
+        font-size: 1.5em;
+    }
+
+    .break {
+        display: none;
+    }
+}
+/* IPAD PRO FORMAT ABOVE */
+
+/* IPHONE 5 FORMAT BELOW */
+@media (max-width: 500px) {
+    #navbar {
+        display: none;
+    }
+
+    #navbar_mobile {
+        max-width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+    }
+
+    .navlink_mobile {
+        font-size: 0.75em;
+        writing-mode: vertical-lr;
+        transform: rotate(215deg);
+    }
+
+    #welcome-section {
+        width: 50vw;
+    }
+
+    #img {
+        width: 40vw;
+        height: auto;
+    }
+
+    #welcomehead {
+        font-size: 2.5em;
+        text-align: center;
+        position: relative;
+        top: -20px;
+        left: 0px;
+    }
+
+    #bottompage {
+        display: block;
+        position: absolute;
+        bottom: 10px;
+        left: 92px;
+        text-align: center;
+        font-size: 0.5em;
+    }
+
+    #bottom_head {
+        margin-bottom: 0px;
+    }
+
+    .form_box {
+        width: 40vw;
+    }
+
+    .break {
+        display: inherit;
+    }
+}
+/* IPHONE 5 FORMAT ABOVE */
+
+#about_me:focus {
+    color: black;
+}
+
+#contact_box:focus {
+    color: black;
+}
+
+.other_link:focus {
+    color: black;
+}
+
+#submit {
+    background: palegoldenrod;
+    color: purple;
+}
+
+#submit:hover {
+    background: goldenrod;
+    transform: scale(1.1);
+}
+
+.form_box {
+    background: palegoldenrod;
+    color: purple;
+    border-radius: 35%;
+    text-align: center;
+}
+
+.form_box:hover {
+    background: goldenrod;
+}

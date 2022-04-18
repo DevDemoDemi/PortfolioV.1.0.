@@ -1,0 +1,218 @@
+#style {
+    background: radial-gradient(circle at bottom, yellow, palegoldenrod, pink, rgb(195, 133, 195), lightblue 80%);
+    color: midnightblue;
+    display: grid;
+    margin: 0px;
+    height: 100vh;
+    max-width: 100vw;
+    justify-content: center;
+    align-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.content {
+    text-align: center;
+    width: 100vw;
+}
+
+#headcont {
+    font-size: 3em;
+    text-shadow: -5px -3px 5px gold;
+    margin-bottom: 1%;
+}
+
+#navcont {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navlink {
+    color: midnightblue;
+    padding: 2%;
+}
+
+.navlink:hover {
+    transform: scale(1.5);
+    color: gold;
+}
+
+#gallink {
+    display: flex;
+    position: relative;
+    width: 5%;
+    height: auto;
+}
+
+#galtext {
+    position: absolute;
+    bottom: 35%;
+    left: 20%;
+    z-index: 2;
+}
+
+#imglink {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#inside-content {
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-template-areas:
+        "section aside";
+    justify-content: center;
+}
+
+#sectcont {
+    grid-area: section;
+    text-align: center;
+    width: 40vw;
+    height: auto;
+    border-style: outset;
+    border-color: gold;
+    padding: 2%;
+}
+
+.secthead {
+    font-size: 2em;
+    text-shadow: -4px -2px 4px gold;
+}
+
+#sectpara {
+    text-align: justify;
+}
+
+.paralink {
+    color: midnightblue;
+}
+
+.paralink:hover {
+    color: #b20931;
+}
+
+#subsect {
+    text-shadow: -3px -1px 3px #c45719;
+    font-size: 1.5em;
+}
+
+#sectimg {
+    width: 40vw;
+    height: auto;
+}
+
+#aside-content {
+    grid-area: aside;
+    margin-left: 10px;
+    width: 40vw;
+    height: auto;
+    padding-top: 2%;
+}
+
+#footcont {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+#first {
+    background: none;
+}
+
+#last {
+    background: none;
+}
+
+#email {
+    background: none;
+}
+
+#submit {
+    background: none;
+}
+
+#submit:hover {
+    background: midnightblue;
+    color: gold;
+    transform: scale(1.3)
+}
+
+@media (max-width: 1200px) {
+    #style {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #galtext {
+        position: absolute;
+        bottom: 35%;
+        left: 5%;
+        z-index: 2;
+    }
+
+    #inside-content {
+        display: grid;
+        grid-template-areas:
+            "section" 
+            "aside";
+        justify-content: center;
+    } 
+
+    #sectcont {
+        width: 90vw;
+        height: auto;
+    }
+
+    #aside-content {
+        margin-left: 2.5%;
+    }
+
+    #sectimg {
+        width: 90vw;
+        height: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    #style {
+        display: block;
+        font-size: 0.75em;
+        width: 100vw;
+        height: 150vh;
+    }
+
+    #gallink {
+        width: 12%;
+        height: auto;
+    }
+
+    #galtext {
+        bottom: 30%;
+        left: 5%;
+    }
+
+    .navlink:hover {
+        transform: none;
+    }
+
+    #inside-content {
+        display: block;
+        width: 100vw;
+    }
+
+    #sectcont {
+        width: 90vw;
+        margin-left: 2%;
+    }
+
+    #aside-content {
+        margin-left: 2.5%;
+    }
+
+    #sectimg {
+        width: 95vw;
+        height: auto;
+    }
+}

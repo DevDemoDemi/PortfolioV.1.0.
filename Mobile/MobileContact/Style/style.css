@@ -1,0 +1,221 @@
+/* MOBILE CONTACT PAGE */
+
+/* IPHONE5 FORMAT BELOW */
+@media (max-width: 500px){
+    #style {
+        background: palegoldenrod;
+        color: purple;
+        display: block;
+        margin: 0px;
+        max-width: 90vw;
+    }
+
+    #navbar_mobile {
+        max-width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+        background: linear-gradient(
+            90deg, 
+            palegoldenrod 0px, 
+            purple 25%, 
+            purple 50%,
+            purple 75%,
+            palegoldenrod 100%);
+        height: 45px;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .navlink_mobile {
+        font-size: 0.75em;
+        writing-mode: vertical-rl;
+        transform: rotate(215deg);
+        font-family: fantasy;
+        color: palegoldenrod;
+    }
+
+    .conthead {
+        font-family: fantasy;
+        font-size: 3em;
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    #contact {
+        display: flex;
+        flex-direction: row;
+        margin-left: 30px;
+    }
+
+    #contact_type {
+        font-style: italic;
+    }
+
+    #contact_info {
+        margin-left: 10px;
+    }
+
+    .sub_head {
+        font-size: 2em;
+        font-family: fantasy;
+        text-align: center;
+    }
+
+    #add_links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background: purple;
+        column-gap: 2px;
+    }
+
+    .links {
+        background: palegoldenrod;
+        padding: 5px;
+    }
+
+    .empty {
+        background: palegoldenrod;
+        width: 55px;
+    }
+
+    #bottompage {
+        position: absolute;
+        bottom: -100px;
+        left: 10px;
+        margin-bottom: 10px;
+    }
+
+    #bottom_head {
+        font-style: italic;
+        margin-bottom: 0px;
+    }
+}
+/* IPHONE5 FORMAT ABOVE */
+
+/* IPAD PRO FORMAT BELOW */
+@media (min-width: 1000px){
+    #style {
+        background: palegoldenrod;
+        color: purple;
+        display: block;
+        margin: 0px;
+    }
+
+    #navbar_mobile {
+        max-width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+        background: linear-gradient(
+            90deg, 
+            palegoldenrod 0px, 
+            purple 25%, 
+            purple 50%,
+            purple 75%,
+            palegoldenrod 100%);
+        height: 45px;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .navlink_mobile {
+        font-size: 2em;
+        /* writing-mode: vertical-rl;
+        transform: rotate(215deg); */
+        font-family: fantasy;
+        color: palegoldenrod;
+    }
+
+    .conthead {
+        position: relative;
+        top: 200px;
+        font-family: fantasy;
+        font-size: 3em;
+        text-align: center;
+    }
+
+    #contact {
+        position: relative;
+        top: 150px;
+        display: flex;
+        flex-direction: row;
+        font-size: 1.25em;
+        justify-content: center;
+    }
+
+    #contact_info {
+        margin-left: 15px;
+    }
+
+    .sub_head {
+        font-size: 2em;
+        font-family: fantasy;
+        position: relative;
+        top: 250px;
+        text-align: center;
+    }
+
+    #add_links {
+        text-align: center;
+        position: relative;
+        top: 250px;
+        background: purple;
+        column-gap: 5px;
+    }
+
+    .links {
+        padding: 2%;
+        font-size: 1.25em; 
+        background: palegoldenrod;
+    }
+
+    .empty {
+        
+        background: palegoldenrod;
+        /* width: 400px; */
+        height: 25px;
+        /* position: relative;
+        top: 0px; */
+    }
+
+    #empty_1 {
+        position: absolute;
+        left: 0px;
+        width: 335px;
+    }
+
+    #empty_2 {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 335px;
+    }
+
+    #bottompage {
+        position: absolute;
+        bottom: 500px;
+        left: 165px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #bottom_head {
+        font-style: italic;
+    }
+
+    .break {
+        display: none;
+    }
+}
+/* IPAD PRO FORMAT ABOVE */

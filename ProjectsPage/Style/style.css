@@ -1,0 +1,211 @@
+#style {
+    background: purple;
+    color: palegoldenrod;
+    display: block;
+    margin: 0px;
+}
+
+#navbar {
+    position: fixed;
+    top: 0px;
+    background: linear-gradient(
+        90deg, 
+        purple 0px, 
+        palegoldenrod 25%, 
+        palegoldenrod 50%,
+        palegoldenrod 75%,
+        purple 100%);
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    z-index: 3;
+    font-family: fantasy;
+}
+
+.navlink {
+    color: purple;
+    padding-right: 5%;
+    padding-left: 5%;
+    font-size: 1.5em;
+    align-self: center;
+    position: relative;
+    left: 27%;
+}
+
+.navlink:hover {
+    color: gray;
+    transform: rotateY(180deg) scale(1.5);
+}
+
+#projects_head {
+    font-family: fantasy;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+#img {
+    height: auto;
+    width: 10vw;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-style: double;
+    border-width: 25px;
+    position: relative;
+}
+
+#welcome_head {
+    position: relative;
+    top: 0px;
+    font-size: 3em;
+}
+
+#page_title {
+    position: absolute;
+    right: 550px;
+    bottom: 0px;
+    font-size: 5em;
+    text-decoration: underline;
+}
+
+.project_img {
+    width: 20vw;
+    height: auto;
+    justify-self: center;
+    z-index: 2;
+    position: relative;
+    left: 75px;
+}
+
+#projects_box {
+    position: absolute;
+    top: 500px;
+    right: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 30vw);
+    margin-bottom: 50px;
+    row-gap: 15px;
+    column-gap: 15px;
+    text-align: center;
+    font-family: fantasy;
+}
+
+.links {
+    color: purple;
+}
+
+.project_tile {
+    background: palegoldenrod;
+    color: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30vh;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.project_img:hover {
+    display: none;
+}
+
+#bio_info {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    font-family: initial;
+}
+
+#tribute_info {
+    position: absolute;
+    top: 150px;
+    left: 625px;
+    font-family: initial;
+}
+
+#tour_info {
+    position: absolute;
+    top: 125px;
+    right: 160px;
+    font-family: initial;
+}
+
+#product_info {
+    position: absolute;
+    top: 425px;
+    left: 170px;
+    font-family: initial;
+}
+
+#survey_info {
+    position: absolute;
+    top: 425px;
+    left: 660px;
+    font-family: initial;
+}
+
+#tech_info {
+    position: absolute;
+    top: 425px;
+    right: 150px;
+    font-family: initial;
+}
+
+#grid_info {
+    position: absolute;
+    top: 700px;
+    left: 150px;
+    font-family: initial;
+}
+
+#rel_info {
+    position: absolute;
+    top: 700px;
+    left: 615px;
+    font-family: initial;
+}
+
+#abs_info {
+    position: absolute;
+    top: 700px;
+    right: 115px;
+    font-family: initial;
+}
+
+#bottompage {
+    position: absolute;
+    left: 27%;
+    bottom: -90vh;
+    /* padding-top: 2%; */
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+.break {
+    display: none;
+}
+
+#submit {
+    background: palegoldenrod;
+    color: purple;
+}
+
+#submit:hover {
+    background: goldenrod;
+    transform: scale(1.1);
+}
+
+.form_box {
+    background: palegoldenrod;
+    color: purple;
+    border-radius: 35%;
+    text-align: center;
+}
+
+.form_box:hover {
+    background: goldenrod;
+}

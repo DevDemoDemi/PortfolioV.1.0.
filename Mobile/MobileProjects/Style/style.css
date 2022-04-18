@@ -1,0 +1,164 @@
+/* MOBILE PROJECTS PAGE */
+
+/* IPHONE5 FORMAT BELOW */
+@media (max-width: 500px){
+    #style {
+        background: palegoldenrod;
+        color: purple;
+        display: block;
+        margin: 0px;
+        max-width: 90vw;
+    }
+
+    #navbar_mobile {
+        max-width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+        background: linear-gradient(
+            90deg, 
+            palegoldenrod 0px, 
+            purple 25%, 
+            purple 50%,
+            purple 75%,
+            palegoldenrod 100%);
+        height: 45px;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .navlink_mobile {
+        font-size: 0.75em;
+        writing-mode: vertical-rl;
+        transform: rotate(215deg);
+        font-family: fantasy;
+        color: palegoldenrod;
+    }
+
+    #pagehead {
+        font-family: fantasy;
+        font-size: 3em;
+        text-align: center;
+        padding-top: 25px;
+    }
+
+    #project_box {
+        text-align: center;
+    }
+
+    .conthead {
+        font-family: fantasy;
+        font-size: 1.5em;
+        margin-bottom: 0px;
+    }
+
+    .images {
+        width: 50vw;
+        height: auto;
+    }
+
+    #bottompage {
+        position: absolute;
+        bottom: -175px;
+        left: 60px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    #bottom_head {
+        font-style: italic;
+        margin-bottom: 0px;
+    }
+}
+/* IPHONE5 FORMAT ABOVE */
+
+/* IPAD PRO FORMAT BELOW */
+@media (min-width: 1000px){
+    #style {
+        background: palegoldenrod;
+        color: purple;
+        display: block;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #navbar_mobile {
+        max-width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+        background: linear-gradient(
+            90deg, 
+            palegoldenrod 0px, 
+            purple 25%, 
+            purple 50%,
+            purple 75%,
+            palegoldenrod 100%);
+        height: 45px;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .navlink_mobile {
+        font-size: 2em;
+        font-family: fantasy;
+        color: palegoldenrod;
+    }
+
+    #pagehead {
+        position: relative;
+        top: 200px;
+        font-family: fantasy;
+        font-size: 3em;
+        text-align: center;
+    }
+
+    #project_box {
+        position: relative;
+        top: 300px;
+        left: 100px;
+        display: grid;
+        grid-template-columns: repeat(3, 20vh);
+        width: 50vw;
+        margin: 0px;
+        position: relative;
+        text-align: center;
+    }
+
+    .conthead {
+        font-family: fantasy;
+        font-size: 1.5em;
+    }
+
+    .images {
+        width: 20vw;
+        height: auto;
+    }
+
+    #bottompage {
+        position: absolute;
+        bottom: 500px;
+        left: 165px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #bottom_head {
+        font-style: italic;
+    }
+
+    .break {
+        display: none;
+    }
+}
+/* IPAD PRO FORMAT ABOVE */
